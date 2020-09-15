@@ -1,10 +1,12 @@
 {
   "compilerOptions": {
     "noEmit": true,
+    "outDir": "./dist/lib",
     "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
-    "lib": ["es6"],
+    "esModuleInterop": true,
+    "lib": ["es6", "dom"],
     "sourceMap": false,
     "declaration": true,
     "strict": true,
@@ -15,5 +17,5 @@
     "forceConsistentCasingInFileNames": true,
     "stripInternal": true
   },
-  "include": ["./src", "./test"]
+  "include": ["./src", "./test", "./scripts"]
 }

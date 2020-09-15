@@ -91,7 +91,11 @@ Almost the same as `writeFile` (i.e. it overwrites), except that if the parent d
 **Signature**
 
 ```ts
-export declare const writeFile: (path: string, data: string, options: fs.WriteFileOptions) => TE.TaskEither<Error, void>
+export declare const writeFile: (
+  path: string,
+  data: string,
+  options: { readonly encoding?: string; readonly flag?: string; readonly mode?: number }
+) => TE.TaskEither<Error, void>
 ```
 
 Added in v0.0.1
